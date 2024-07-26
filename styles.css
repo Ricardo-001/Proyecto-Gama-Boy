@@ -1,0 +1,437 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(./Assets/Banner\ Animado.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.case{
+    position: relative;
+    width:  400px;
+    height: 670px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F1EFF2;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 12px 12px 50px 12px
+}
+
+
+.line-top{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 30px;
+    background-color: #000000;
+}
+
+
+.line-top::after, .line-top::before{
+    position: absolute;
+    content: "";
+    background-color: #000000;
+    top: -30px;
+}
+
+
+.line-top::after{
+    width: 5px;
+    height: 30px;
+    left: 9%;
+}
+
+
+.line-top::before{
+    width: 5px;
+    height: 30px;
+    left: 91%
+}
+
+
+.overlay-screen{
+    position: absolute;
+    width: 320px;
+    height: 260px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 47px 10px;
+    background-color: #828282;
+}
+
+
+.line-bottom{
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    top: 5px;
+    left: 10px;
+    background-color: #841990;
+}
+
+
+.line-bottom::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    top: 10px;
+    background-color: #293884;
+}
+
+
+.text{
+    position: absolute;
+    height: 15px;
+    left: 105px;
+    top: 5px;
+    font-size: 0.7em;
+    color: rgb(215, 215, 215);
+    background-color: #828282;
+}
+
+
+.led{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 100px;
+    left: 20px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+
+.batery{
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    font-size: 0.5em;
+    color: rgb(215, 215, 215);
+}
+
+
+.screen{
+    position: relative;
+    width: 210px;
+    height: 195px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C5B864;
+}
+
+
+.box-buttons{
+    position: absolute;
+    width: 100%;
+    height: 307px;
+    top: 350px;
+    background-color: transparent;
+    border-radius: 12px 10px 50px 10px
+}
+
+
+.arrow-1{
+    position: absolute;
+    background-color: transparent;
+}
+
+
+.arrow-1::after{
+    position: absolute;
+    content: "";
+    top: 33px;
+    left: 70px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #a5a5a5;
+}
+
+
+.arrow-1::before{
+    position: absolute;
+    content: "";
+    top: 80px;
+    left: 128px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #a5a5a5;
+}
+
+
+.arrow-2{
+    position: absolute;
+    background-color: transparent;
+}
+
+
+.arrow-2::after{
+    position: absolute;
+    content: "";
+    top: 138px;
+    left: 70px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #a5a5a5;
+}
+
+
+.arrow-2::before{
+    position: absolute;
+    content: "";
+    top: 80px;
+    left: 23px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #a5a5a5;
+}
+
+
+.cross {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 15%;
+    left: 9%;
+}
+
+
+.cross::after, .cross::before{
+    position: absolute;
+    content: "";
+    border-radius: 7px;
+    background-color: #4E4E4E;
+}
+
+
+.cross::after{
+    width: 100%;
+    height: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.cross::before{
+    width: 28px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle{
+    position: absolute;
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background-color: #3D3D3D;
+}
+
+
+.bottoms{
+    position: absolute;
+    width: 125px;
+    height: 56px;
+    left: 240px;
+    top: 60px;
+    transform: rotate(157deg);
+    border-radius: 50px;
+    background-color: #a5a5a5;
+}
+
+
+.bottom-a{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 7px;
+    left: 70px;
+    border: none;
+    border-radius: 100%;
+    background-color: #B33F7B;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.bottom-a:active{
+    background-color: #ac0e5f; /* Un color más oscuro para indicar que está presionado */
+    transform: scale(0.85); /* Hace que el botón se vea presionado */
+}
+
+
+.bottom-b{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 7px;
+    left: 10px;
+    border: none;
+    border-radius: 100%;
+    background-color: #B33F7B;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.bottom-b:active{
+    background-color: #ac0e5f; /* Un color más oscuro para indicar que está presionado */
+    transform: scale(0.85); /* Hace que el botón se vea presionado */
+}
+
+
+.option-1{
+    position: absolute;
+    width: 60px;
+    height: 15px;
+    border-radius: 50px;
+    top: 180px;
+    left: 130px;
+    background-color: #bdbdbd;
+    transform: rotate(155deg);
+}
+
+
+.option-1::after{
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 10px;
+    top: 2.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    background-color: #818181;
+}
+
+
+.option-2{
+    position: absolute;
+    width: 60px;
+    height: 15px;
+    border-radius: 50px;
+    top: 185px;
+    left: 185px;
+    background-color: #bdbdbd;
+    transform: rotate(155deg);
+}
+
+
+.option-2::after{
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 10px;
+    top: 2.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    background-color: #818181;
+}
+
+
+.sound-1{
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    left: 335px;
+    top: 225px;
+    transform: rotate(60deg);
+    border-radius: 50px;
+    background-color: #a5a5a5;
+}
+
+
+.sound-1::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 8px;
+    left: 0px;
+    top: 20px;
+    border-radius: 50px;
+    background-color: #a5a5a5;
+}
+
+
+.sound-1::before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 8px;
+    left: 0px;
+    top: 40px;
+    border-radius: 50px;
+    background-color: #a5a5a5;
+}
+
+
+.sound-2{
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    left: 285px;
+    top: 255px;
+    transform: rotate(59deg);
+    border-radius: 50px;
+    background-color: #a5a5a5;
+}
+
+
+.sound-2::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 8px;
+    left: 0px;
+    top: 20px;
+    border-radius: 50px;
+    background-color: #a5a5a5;
+}
+
+
+.sound-2::before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 8px;
+    left: 0px;
+    top: 38px;
+    border-radius: 50px;
+    background-color: #a5a5a5;
+}
+
+
+.text-nin{
+    position: absolute;
+    top: 320px;
+    left: 40px;
+}
+
+
+.text-nin{
+    color: #4f4e4e;
+}
+
+
+
+
+
+
+
+
+
+

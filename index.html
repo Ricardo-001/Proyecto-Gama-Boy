@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game Boy Project</title>
+</head>
+
+<body>
+    <main>
+
+
+        <!-- #region Game Boy-->
+        <div class="case">
+
+            <!-- top line -->
+            <span class="line-top"></span>
+
+
+            <!-- screen edge -->
+            <div class="overlay-screen">
+
+
+                <!-- bottom line -->
+                <span class="line-bottom"></span>
+
+
+                <!-- text of the superior screen -->
+                <span class="text">DOT MATRIX WHIT STEREO SOUND</span>
+
+
+                <!-- led -->
+                <span class="led"></span>
+
+
+                <!-- text of Batery -->
+                <span class="batery">BATTERY</span>
+
+
+                <!-- screen -->
+                <div class="screen">
+
+
+                    <!-- #region EmulatorJS-->
+                    <div style="width:210px;height:200px;max-width:100%;object-fit: cover;">
+                        <div id="game"></div>
+                    </div>
+                    <script>
+                        EJS_player = "#game";
+                        EJS_core = "gb";
+                        EJS_color = "#0064ff";
+                        EJS_startOnLoaded = true;
+                        EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+                        EJS_gameUrl = "Pokemon - Gold Version (UE) [C][!].gbc";
+                        EJS_biosUrl = "gbc_bios.bin";
+                    </script>
+                    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+                    <!-- endregion EmulatorJS -->
+
+                </div>
+            </div>
+
+            <span class="text-nin">Nintedo GAME BOY </span>
+
+            <!-- #region box of buttons and styles-->
+            <div class="box-buttons">
+
+                <!-- top arrow and ring -->
+                <span class="arrow-1"></span>
+                <!-- bottom arrow and left -->
+                <span class="arrow-2"></span>
+
+                <!-- cross of the game boy -->
+                <span class="cross">
+                    <!-- circle style -->
+                    <span class="circle"></span>
+                </span>
+
+                <!-- bottoms of the game boy --> 
+                <span class="bottoms">
+                    <!-- bottom a-->
+                    <button class="bottom-a"></button>
+                    <!-- bottom b-->
+                    <button class="bottom-b"></button>
+                </span>
+
+                <!-- bottom select -->
+                <span class="option-1"></span>
+                <!-- bottom start -->
+                <span class="option-2"></span>
+
+                <!-- sound output -->
+                <span class="sound-1"></span>
+                <span class="sound-2"></span>
+            </div>
+            <!-- endregion box of buttons and styles-->
+
+        </div>
+        <!-- endregion Game Boy -->
+
+
+
+
+
+    </main>
+</body>
+
+</html>
